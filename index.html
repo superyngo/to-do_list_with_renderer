@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+
+    <script src="script.js" defer></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({"gtm.start": new Date().getTime(), event: "gtm.js"});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N8M5XR8");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PGQ9WQT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
+    <main>
+      <div class="background">
+        <img
+          class="backgroundImage"
+          src="./assets/quino-al-JFeOy62yjXk-unsplash.jpg"
+        />
+      </div>
+      <section class="container">
+        <section class="inputWrap">
+          <input type="text" placeholder="請輸入待辦事項" />
+          <select id="selectImportance" onchange="selectImportanceChange()">
+            <option value="normal">一般</option>
+            <option value="important">重要</option>
+            <option value="urgent">緊急</option>
+          </select>
+        </section>
+        <section class="buttonWrap">
+          <button onclick="add()">新增</button>
+          <button onclick="exportTodos()">匯出</button>
+          <button onclick="save()">儲存</button>
+        </section>
+        <hr />
+        <section class="listWrap">
+          <div id="root"></div>
+        </section>
+      </section>
+      <div>
+        Photo by
+        <a
+          href="https://unsplash.com/it/@quinoal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Quino Al</a
+        >
+        on
+        <a
+          href="https://unsplash.com/backgrounds?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </div>
+    </main>
+  </body>
+</html>
