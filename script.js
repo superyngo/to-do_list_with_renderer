@@ -35,8 +35,10 @@ function render() {
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
     const toggleBtn = document.createElement("button");
-    li.textContent = todo.title;
-    li.style.backgroundColor = importanceBackgroundColor[todo.category];
+    const title = document.createElement("span");
+    title.textContent = todo.title;
+    title.style.backgroundColor = importanceBackgroundColor[todo.category];
+    title.className = "title";
     delBtn.textContent = "刪除";
     delBtn.onclick = () => del(index);
     if (!todo.isCompleted) {
@@ -50,7 +52,7 @@ function render() {
     }
     toggleBtn.onclick = () => toggleDone(index);
     ul.append(li);
-    li.append(delBtn, toggleBtn);
+    li.append(delBtn, toggleBtn, title);
   });
 }
 

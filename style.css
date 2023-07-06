@@ -66,6 +66,12 @@ li {
   width: 90%;
 }
 
+.title {
+  position: absolute;
+  left: 0;
+  width: fit-content;
+}
+
 li > button {
   float: right;
   margin: 0 0.1rem;
