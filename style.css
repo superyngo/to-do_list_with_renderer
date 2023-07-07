@@ -22,6 +22,7 @@ video {
 }
 
 body {
+  background-color: #fff0df;
   min-height: 100svh;
   width: 100%;
 }
