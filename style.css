@@ -20,9 +20,9 @@ video {
   font: inherited;
 }
 
-html {
+/* html {
   color-scheme: dark light;
-}
+} */
 
 body {
   min-height: 100svh;
@@ -48,7 +48,7 @@ body {
 }
 
 input {
-  min-width: 500px;
+  min-width: 250px;
 }
 
 .buttonWrap {
